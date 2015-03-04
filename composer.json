@@ -14,7 +14,7 @@
         "illuminate/support": "5.x",
         "illuminate/translation": "5.x",
         "illuminate/database": "5.x",
-        "waavi/model": "1.0"
+        "yasir011/model": "1.0"
     },
     "autoload": {
         "classmap": [

@@ -1,12 +1,12 @@
 {
-    "name": "waavi/translation",
+    "name": "yasir011/translation",
     "version":  "1.0",
-    "description": "A Translation package for Laravel 4 with database and cache support",
+    "description": "A Translation package for Laravel 5 with database and cache support",
     "license": "MIT",
     "authors": [
         {
-            "name": "Waavi",
-            "email": "info@waavi.com"
+            "name": "yasir011",
+            "email": "yasirkhan011@gmail.com"
         }
     ],
     "require": {

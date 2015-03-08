@@ -1,6 +1,6 @@
-<?php namespace Waavi\Translation\Models;
+<?php namespace Yasir011\Translation\Models;
 
-use Waavi\Model\WaaviModel;
+use Yasir011\Model\WaaviModel;
 
 class LanguageEntry extends WaaviModel {
 
@@ -40,8 +40,8 @@ class LanguageEntry extends WaaviModel {
 
   /**
    *  Return the language entry in the default language that corresponds to this entry.
-   *  @param Waavi\Translation\Models\Language  $defaultLanguage
-   *  @return Waavi\Translation\Models\LanguageEntry
+   *  @param Yasir011\Translation\Models\Language  $defaultLanguage
+   *  @return Yasir011\Translation\Models\LanguageEntry
    */
   public function original($defaultLanguage)
   {
@@ -92,8 +92,8 @@ class LanguageEntry extends WaaviModel {
   /**
    *  Returns a list of entries that contain a translation for this item in the given language.
    *
-   *  @param Waavi\Translation\Models\Language
-   *  @return Waavi\Translation\Models\LanguageEntry
+   *  @param Yasir011\Translation\Models\Language
+   *  @return Yasir011\Translation\Models\LanguageEntry
    */
   public function getSuggestedTranslations($language)
   {

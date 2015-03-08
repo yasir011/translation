@@ -9,12 +9,12 @@ This package allows developers to leverage their database and cache to manage mu
 Edit composer.json:
 
 	"require": {
-		"waavi/translation": "*"
+		"Yasir011/translation": "*"
 	},
 	"repositories": [
     {
       "type": "vcs",
-      "url":  "git@github.com:Waavi/translation.git"
+      "url":  "git@github.com:Yasir011/translation.git"
     }
   ],
 
@@ -24,15 +24,15 @@ In app/config/app.php, replace the following entry from the providers array:
 
 with:
 
-	'Waavi\Translation\TranslationServiceProvider'
+	'Yasir011\Translation\TranslationServiceProvider'
 
 Execute the database migrations:
 
-	php artisan migrate --package=waavi/translation
+	php artisan migrate --package=Yasir011/translation
 
 You may publish the package's configuration if you so choose:
 
-	php artisan config:publish waavi/translation
+	php artisan config:publish Yasir011/translation
 
 ## Usage
 
@@ -127,7 +127,7 @@ Since querying the database everytime a language group must be loaded is grossly
 
 By default, the cache will be deactivated if the value of 'debug' in app/config/app.php is true, and activated when debug is false. You may customize this behaviour in the package's config file.
 
-Entries in the cache will be prefixed with 'waavi|translation|'
+Entries in the cache will be prefixed with 'Yasir011|translation|'
 
 ## The models
 

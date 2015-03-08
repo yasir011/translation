@@ -1,12 +1,12 @@
-<?php namespace Waavi\Translation;
+<?php namespace Yasir011\Translation;
 
 use Illuminate\Translation\TranslationServiceProvider as LaravelTranslationServiceProvider;
-use Waavi\Translation\Facades\Translator;
-use Waavi\Translation\Loaders\FileLoader;
-use Waavi\Translation\Loaders\DatabaseLoader;
-use Waavi\Translation\Loaders\MixedLoader;
-use Waavi\Translation\Providers\LanguageProvider;
-use Waavi\Translation\Providers\LanguageEntryProvider;
+use Yasir011\Translation\Facades\Translator;
+use Yasir011\Translation\Loaders\FileLoader;
+use Yasir011\Translation\Loaders\DatabaseLoader;
+use Yasir011\Translation\Loaders\MixedLoader;
+use Yasir011\Translation\Providers\LanguageProvider;
+use Yasir011\Translation\Providers\LanguageEntryProvider;
 use Config;
 
 class TranslationServiceProvider extends LaravelTranslationServiceProvider {
@@ -34,7 +34,7 @@ class TranslationServiceProvider extends LaravelTranslationServiceProvider {
 	 */
 	public function register()
 	{
-		$this->package('waavi/translation', 'waavi/translation', __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..');
+		$this->package('Yasir011/translation', 'Yasir011/translation', __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..');
 
 		$this->registerLoader();
 		$this->registerTranslationFileLoader();
@@ -66,10 +66,10 @@ class TranslationServiceProvider extends LaravelTranslationServiceProvider {
 		$app = $this->app;
 		$this->app['translation.loader'] = $this->app->share(function($app)
 		{
-			$languageProvider 	= new LanguageProvider($app['config']['waavi/translation::language.model']);
-			$langEntryProvider 	= new LanguageEntryProvider($app['config']['waavi/translation::language_entry.model']);
+			$languageProvider 	= new LanguageProvider($app['config']['Yasir011/translation::language.model']);
+			$langEntryProvider 	= new LanguageEntryProvider($app['config']['Yasir011/translation::language_entry.model']);
 
-			$mode = $app['config']['waavi/translation::mode'];
+			$mode = $app['config']['Yasir011/translation::mode'];
 
 			if ($mode == 'auto' || empty($mode)){
 				$mode = ($app['config']['app.debug'] ? 'mixed' : 'database');
@@ -97,8 +97,8 @@ class TranslationServiceProvider extends LaravelTranslationServiceProvider {
 	{
 		$this->app['translator.load'] = $this->app->share(function($app)
 		{
-			$languageProvider 	= new LanguageProvider($app['config']['waavi/translation::language.model']);
-			$langEntryProvider 	= new LanguageEntryProvider($app['config']['waavi/translation::language_entry.model']);
+			$languageProvider 	= new LanguageProvider($app['config']['Yasir011/translation::language.model']);
+			$langEntryProvider 	= new LanguageEntryProvider($app['config']['Yasir011/translation::language_entry.model']);
 			$fileLoader 				= new FileLoader($languageProvider, $langEntryProvider, $app);
 			return new Commands\FileLoaderCommand($languageProvider, $langEntryProvider, $fileLoader);
 		});

@@ -1,4 +1,4 @@
-<?php namespace Waavi\Translation\Facades;
+<?php namespace Yasir011\Translation\Facades;
 
 use Illuminate\Translation\Translator as LaravelTranslator;
 
@@ -6,7 +6,7 @@ class Translator extends LaravelTranslator {
 
 	/**
 	 *	Returns the language provider:
-	 *	@return Waavi\Translation\Providers\LanguageProvider
+	 *	@return Yasir011\Translation\Providers\LanguageProvider
 	 */
 	public function getLanguageProvider()
 	{
@@ -15,7 +15,7 @@ class Translator extends LaravelTranslator {
 
 	/**
 	 *	Returns the language entry provider:
-	 *	@return Waavi\Translation\Providers\LanguageEntryProvider
+	 *	@return Yasir011\Translation\Providers\LanguageEntryProvider
 	 */
 	public function getLanguageEntryProvider()
 	{

@@ -1,11 +1,11 @@
-<?php namespace Waavi\Translation\Commands;
+<?php namespace Yasir011\Translation\Commands;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Waavi\Translation\Providers\LanguageProvider as LanguageProvider;
-use Waavi\Translation\Providers\LanguageEntryProvider as LanguageEntryProvider;
+use Yasir011\Translation\Providers\LanguageProvider as LanguageProvider;
+use Yasir011\Translation\Providers\LanguageEntryProvider as LanguageEntryProvider;
 
 class FileLoaderCommand extends Command {
 
@@ -26,8 +26,8 @@ class FileLoaderCommand extends Command {
   /**
    *  Create a new mixed loader instance.
    *
-   *  @param  \Waavi\Lang\Providers\LanguageProvider        $languageProvider
-   *  @param  \Waavi\Lang\Providers\LanguageEntryProvider   $languageEntryProvider
+   *  @param  \Yasir011\Lang\Providers\LanguageProvider        $languageProvider
+   *  @param  \Yasir011\Lang\Providers\LanguageEntryProvider   $languageEntryProvider
    *  @param  \Illuminate\Foundation\Application            $app
    */
   public function __construct($languageProvider, $languageEntryProvider, $fileLoader)

@@ -1,6 +1,6 @@
-<?php namespace Waavi\Translation\Models;
+<?php namespace Yasir011\Translation\Models;
 
-use Waavi\Model\WaaviModel;
+use Yasir011\Model\WaaviModel;
 
 class Language extends WaaviModel {
 

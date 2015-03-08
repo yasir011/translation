@@ -21,7 +21,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Waavi\\Translation": "src/"
+            "Yasir011\\Translation": "src/"
         }
     },
     "minimum-stability": "dev"

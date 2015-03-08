@@ -1,10 +1,10 @@
-<?php namespace Waavi\Translation\Loaders;
+<?php namespace Yasir011\Translation\Loaders;
 
 use Illuminate\Translation\LoaderInterface;
 use Illuminate\Translation\FileLoader as LaravelFileLoader;
-use Waavi\Translation\Loaders\Loader;
-use Waavi\Translation\Providers\LanguageProvider as LanguageProvider;
-use Waavi\Translation\Providers\LanguageEntryProvider as LanguageEntryProvider;
+use Yasir011\Translation\Loaders\Loader;
+use Yasir011\Translation\Providers\LanguageProvider as LanguageProvider;
+use Yasir011\Translation\Providers\LanguageEntryProvider as LanguageEntryProvider;
 
 class FileLoader extends Loader implements LoaderInterface {
 
@@ -18,8 +18,8 @@ class FileLoader extends Loader implements LoaderInterface {
 	/**
 	 * 	Create a new mixed loader instance.
 	 *
-	 * 	@param  \Waavi\Lang\Providers\LanguageProvider  			$languageProvider
-	 * 	@param 	\Waavi\Lang\Providers\LanguageEntryProvider		$languageEntryProvider
+	 * 	@param  \Yasir011\Lang\Providers\LanguageProvider  			$languageProvider
+	 * 	@param 	\Yasir011\Lang\Providers\LanguageEntryProvider		$languageEntryProvider
 	 *	@param 	\Illuminate\Foundation\Application  					$app
 	 */
 	public function __construct($languageProvider, $languageEntryProvider, $app)

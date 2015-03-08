@@ -14,7 +14,7 @@
         "illuminate/support": "5.x",
         "illuminate/translation": "5.x",
         "illuminate/database": "5.x",
-        "yasir011/model": "1.1"
+        "yasir011/model": "dev-master"
     },
     "autoload": {
         "classmap": [
